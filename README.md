@@ -51,15 +51,21 @@
 
 #### 주요 라이브러리
 
-- 프레임워크: Next.js 13을 사용하여 개발
+- 프레임워크: Next.js 13의 앱 라우팅을 경험해보고 구조상의 이점이 있는지 여부를 파악하기 위해 채택
 - 패키지 관리: Yarn
 - 코드관리: Git, Github
 - 컨벤션: Prettier, ESLint
-- 스타일: emotion, mui를 사용하려 했으나 아직까지 지원이 원활하지 않은 것으로 판단하여 설치는 해두고 설정은 임시로 해놨으나 기본 셋업만 하고 사용은 보류하기로 결정, 대체하기 위해 Tailwind CSS와 CSS-in-JS로 vanilla-extract를 사용하기로 결정
-- 전역 상태관리: recoil, Justand
+- 스타일: CSS-in-JS로 emotion, vanilla-extract, mui를 사용하려 했으나 아직까지 지원이 원활하지 않은 것으로 판단하여 설치는 해두고 설정은 임시로 해놨으나 기본 셋업만 하고 사용은 보류하기로 결정(emotion의 경우 mui를 사용할 때 사용하기 위해 사용하려 했으며 다른 세팅이 크게 필요가 없기 때문에 채택, vanilla-extract의 경우 회사에서 사용하고 익숙한 부분이 있어 emotion으로 구현하기 어려운 부분을 처리하기 위해 채택), 현재 사용하지 못하는 부분을 대체하기 위해 그리고 Tailwind CSS를 학습하기 위해 Tailwind CSS를 사용하기로 결정
+- 전역 상태관리: 기본적으로 recoil을 사용할 것이나 유지보수 측면에서 이슈가 있는 걸로 알고 있어서 다른 부분에 대해 학습을 위해 redux, redux toolkit, Justand, Jotai도 사용해 볼 예정
 - 비동기 과정 처리: Axios, React-Query
+- API를 위한 Query 언어: GraphQL API
 - 폼 상태관리: React-hook-form
 - 에러 나는 부분 확인 및 로그: Sentry
+
+#### 라이브러리 도입에 있어 참고한 링크(Emotion, Error 처리 관련)
+
+https://github.com/emotion-js/emotion/issues/2928
+https://github.com/vercel/next.js/issues/41994
 
 ### 핵심 기능
 
