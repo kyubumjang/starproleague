@@ -17,7 +17,6 @@ const nextConfig = {
     emotion: true,
   },
   pageExtensions: ["ts", "tsx", "js", "jsx", "md", "mdx"],
-  reactStrictMode: true,
 };
 
 module.exports = withVanillaExtract(withMDX(nextConfig));
