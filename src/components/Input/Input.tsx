@@ -15,9 +15,9 @@ import {
   InputColor,
   InputEventType,
   InputSize,
+  InputTone,
   InputType,
   InputValidation,
-  InputVariant,
 } from "./Input.types";
 
 import { twMerge } from "tailwind-merge";
@@ -25,7 +25,7 @@ import { useComponentTheme } from "@/theme/theme.context";
 
 interface InputProps
   extends Omit<ComponentPropsWithRef<"input">, "size" | "type" | "color"> {
-  variant?: InputVariant;
+  tone?: InputTone;
   color?: InputColor;
   size?: InputSize;
   type?: InputType;
@@ -42,7 +42,7 @@ interface InputProps
 const Input = forwardRef((props: InputProps, ref?: Ref<HTMLInputElement>) => {
   const {
     className = "",
-    variant = "line",
+    tone = "line",
     color = "gray",
     size = "md",
     type = "text",
@@ -79,19 +79,19 @@ const Input = forwardRef((props: InputProps, ref?: Ref<HTMLInputElement>) => {
   const borderClasses = useMemo(() => {
     return twMerge(
       theme.borderBase({
-        variant,
+        tone,
         disabled,
         validation,
         eventType: inputEvent,
       }),
     );
-  }, [theme, variant, disabled, validation, inputEvent]);
+  }, [theme, tone, disabled, validation, inputEvent]);
 
   const inputClasses = useMemo(() => {
     return twMerge(
       theme.inputBase({
         className,
-        variant,
+        tone,
         color,
         size,
         type,
@@ -111,7 +111,7 @@ const Input = forwardRef((props: InputProps, ref?: Ref<HTMLInputElement>) => {
     size,
     theme,
     type,
-    variant,
+    tone,
   ]);
 
   useEffect(() => {

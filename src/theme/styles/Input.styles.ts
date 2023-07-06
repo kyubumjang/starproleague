@@ -27,9 +27,9 @@ const container_base = cva(["relative", "flex", "flex-col", "gap-1"], {
 
 const border_base = cva(["flex", "items-center", "gap-1.5"], {
   variants: {
-    variant: {
+    tone: {
       line: ["border", "border-solid", "rounded"],
-      ghost: [],
+      ghost: ["border", "border-solid", "rounded"],
       transparent: [],
     },
     color: {
@@ -57,107 +57,107 @@ const border_base = cva(["flex", "items-center", "gap-1.5"], {
   },
   compoundVariants: [
     {
-      variant: "line",
+      tone: "line",
       eventType: "default",
       className: ["border-neutral-200"],
     },
     {
-      variant: "line",
+      tone: "line",
       eventType: "hover",
       className: ["hover:border-neutral-500"],
     },
     {
-      variant: "line",
+      tone: "line",
       eventType: "focus",
       className: ["focus:border-indigo-500", "shadow-md", "shadow-indigo-50"],
     },
     {
-      variant: "line",
+      tone: "line",
       eventType: "error",
       className: ["border-red-500, shadow-sm, shadow-red-50"],
     },
     {
-      variant: "ghost",
+      tone: "ghost",
       eventType: "disabled",
       className: ["bg-neutral-50", "text-neutral-700", "border-neutral-200"],
     },
     {
-      variant: "ghost",
+      tone: "ghost",
       eventType: "default",
       className: ["border-transparent"],
     },
     {
-      variant: "ghost",
+      tone: "ghost",
       eventType: "hover",
       className: ["hover:border-neutral-500"],
     },
     {
-      variant: "ghost",
+      tone: "ghost",
       eventType: "focus",
       className: ["focus:border-indigo-500", "shadow-md", "shadow-indigo-50"],
     },
     {
-      variant: "ghost",
+      tone: "ghost",
       eventType: "error",
       className: ["border-red-500"],
     },
     {
-      variant: "ghost",
+      tone: "ghost",
       eventType: "disabled",
       className: ["bg-neutral-50", "text-neutral-700", "border-neutral-200"],
     },
     {
-      variant: "transparent",
+      tone: "transparent",
       eventType: "default",
       className: ["bg-transparent", "border-transparent"],
     },
     {
-      variant: "transparent",
+      tone: "transparent",
       eventType: "hover",
       className: ["hover:border-transparent", "hover:bg-transparent"],
     },
     {
-      variant: "transparent",
+      tone: "transparent",
       eventType: "focus",
       className: ["bg-transparent, border-transparent"],
     },
     {
-      variant: "transparent",
+      tone: "transparent",
       eventType: "error",
       className: ["bg-transparent, border-transparent"],
     },
     {
-      variant: "transparent",
+      tone: "transparent",
       eventType: "disabled",
       className: ["text-neutral500", "bg-transparent, border-transparent"],
     },
     {
-      variant: "line",
+      tone: "line",
       disabled: false,
       // className: ["bg-white"],
     },
     {
-      variant: "ghost",
+      tone: "ghost",
       disabled: false,
       // className: ["bg-gray-50"],
     },
     {
-      variant: "transparent",
+      tone: "transparent",
       disabled: false,
       // className: ["bg-transparent"],
     },
     {
-      variant: "line",
+      tone: "line",
       disabled: true,
       className: ["bg-gray-100"],
     },
     {
-      variant: "ghost",
+      tone: "ghost",
       disabled: true,
       className: ["bg-gray-200"],
     },
     {
-      variant: "transparent",
+      tone: "transparent",
       disabled: true,
       className: ["bg-gray-50"],
     },
@@ -193,7 +193,7 @@ const input_base = cva(
   ],
   {
     variants: {
-      variant: {
+      tone: {
         line: [
           "text-gray-800",
           // "focus:bg-gray-50",
@@ -275,7 +275,7 @@ const input_base = cva(
       },
       {
         type: "file",
-        variant: ["line", "ghost"],
+        tone: ["line", "ghost"],
         className: [
           "file:bg-gray-100",
           "file:hover:bg-gray-200",
@@ -285,7 +285,7 @@ const input_base = cva(
       },
       {
         type: "file",
-        variant: "transparent",
+        tone: "transparent",
         className: [
           "file:bg-gray-50",
           "file:hover:bg-gray-100",
@@ -541,7 +541,7 @@ const input_base = cva(
 
 const icon = cva([], {
   variants: {
-    variant: {
+    tone: {
       line: ["text-gray-600", "fill-gray-600"],
       ghost: ["text-gray-600", "fill-gray-600"],
       transparent: ["text-gray-600", "fill-gray-600"],

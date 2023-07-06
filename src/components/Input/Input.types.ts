@@ -1,4 +1,4 @@
-export type InputVariant = "line" | "ghost" | "transparent";
+export type InputTone = "line" | "ghost" | "transparent";
 export type InputColor = "indigo" | "gray" | "black";
 export type InputSize = "xs" | "sm" | "md" | "lg" | "xl";
 export type InputType =
