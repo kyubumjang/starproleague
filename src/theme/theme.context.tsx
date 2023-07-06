@@ -9,6 +9,11 @@ export type Theme = {
 };
 
 type ThemeComponents = {
+  Button: {
+    buttonBase: typeof styles.buttonStyles.button_base;
+    chevron: typeof styles.buttonStyles.chevron;
+    spinner: typeof styles.buttonStyles.spinner;
+  };
   Input: {
     containerBase: typeof styles.inputStyles.container_base;
     borderBase: typeof styles.inputStyles.border_base;
@@ -22,6 +27,11 @@ type ThemeComponents = {
 
 const defaultTheme: Theme = {
   components: {
+    Button: {
+      buttonBase: styles.buttonStyles.button_base,
+      chevron: styles.buttonStyles.chevron,
+      spinner: styles.buttonStyles.spinner,
+    },
     Input: {
       containerBase: styles.inputStyles.container_base,
       borderBase: styles.inputStyles.border_base,
