@@ -14,6 +14,11 @@ type ThemeComponents = {
     chevron: typeof styles.buttonStyles.chevron;
     spinner: typeof styles.buttonStyles.spinner;
   };
+  CheckBox: {
+    labelBase: typeof styles.checkBoxStyles.label_base;
+    checkBoxBase: typeof styles.checkBoxStyles.check_box_base;
+    checkBase: typeof styles.checkBoxStyles.check_base;
+  };
   Input: {
     containerBase: typeof styles.inputStyles.container_base;
     borderBase: typeof styles.inputStyles.border_base;
@@ -31,6 +36,11 @@ const defaultTheme: Theme = {
       buttonBase: styles.buttonStyles.button_base,
       chevron: styles.buttonStyles.chevron,
       spinner: styles.buttonStyles.spinner,
+    },
+    CheckBox: {
+      labelBase: styles.checkBoxStyles.label_base,
+      checkBoxBase: styles.checkBoxStyles.check_box_base,
+      checkBase: styles.checkBoxStyles.check_base,
     },
     Input: {
       containerBase: styles.inputStyles.container_base,
