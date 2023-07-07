@@ -20,6 +20,7 @@ import {
   InputValidation,
 } from "./Input.types";
 
+import { Spinner } from "../Spinner";
 import { twMerge } from "tailwind-merge";
 import { useComponentTheme } from "@/theme/theme.context";
 
@@ -245,8 +246,7 @@ const Input = forwardRef((props: InputProps, ref?: Ref<HTMLInputElement>) => {
             )}
             {loading && (
               <span className={theme.suffixElementWrapper({ size })}>
-                {/* <Spinner size={size} color="gray" /> */}
-                <div>Loading...</div>
+                <Spinner size={size} color="gray" />
               </span>
             )}
           </div>

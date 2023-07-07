@@ -7,6 +7,7 @@ import {
 } from "./Button.types";
 import { ComponentPropsWithoutRef, Ref, forwardRef, useMemo } from "react";
 
+import { Spinner } from "../Spinner";
 import { twMerge } from "tailwind-merge";
 import { useComponentTheme } from "@/theme/theme.context";
 import { useComponentVariant } from "@/theme/variant.context";
@@ -33,7 +34,6 @@ const Button = forwardRef(
     ) as Partial<ButtonProps>;
 
     const {
-      variant = "primary",
       size = "md",
       color = "black",
       tone = "fill",
@@ -92,10 +92,7 @@ const Button = forwardRef(
         {...rest}
       >
         {prefixElement && prefixElement}
-        {
-          loading && <div>Loading...</div>
-          // <Spinner className={spinnerClasses} />
-        }
+        {loading && <Spinner className={spinnerClasses} />}
         {suffixElement && suffixElement}
         {children}
       </button>

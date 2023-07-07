@@ -6,6 +6,7 @@ const button_base = cva(
     "items-center",
     "justify-center",
     "enabled:cursor-pointer",
+    "w-full",
     "rounded",
     "focus:outline-none",
     "data-[has-prefix-element=true]:rounded-l-none",
