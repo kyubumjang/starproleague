@@ -28,6 +28,9 @@ type ThemeComponents = {
     prefixElementWrapper: typeof styles.inputStyles.prefix_element_wrapper;
     suffixElementWrapper: typeof styles.inputStyles.suffix_element_wrapper;
   };
+  Spinner: {
+    spinnerBase: typeof styles.spinnerStyles.spinner_base;
+  };
   Text: {
     textBase: typeof styles.textStyles.text_base;
   };
@@ -53,6 +56,9 @@ const defaultTheme: Theme = {
       inputWrapper: styles.inputStyles.input_wrapper,
       prefixElementWrapper: styles.inputStyles.prefix_element_wrapper,
       suffixElementWrapper: styles.inputStyles.suffix_element_wrapper,
+    },
+    Spinner: {
+      spinnerBase: styles.spinnerStyles.spinner_base,
     },
     Text: {
       textBase: styles.textStyles.text_base,
