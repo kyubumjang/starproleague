@@ -1,8 +1,7 @@
 "use client";
 
 import { Provider, createContext, useContext } from "react";
-
-import { buttonVariants } from "@/theme/variants/Button.variants";
+import { buttonVariants, textVariants } from "./variants";
 
 export type Variant = {
   components: VariantComponents;
@@ -10,11 +9,13 @@ export type Variant = {
 
 type VariantComponents = {
   Button: typeof buttonVariants;
+  Text: typeof textVariants;
 };
 
 const defaultVariant: Variant = {
   components: {
     Button: buttonVariants,
+    Text: textVariants,
   },
 };
 
