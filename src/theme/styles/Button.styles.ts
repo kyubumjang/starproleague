@@ -134,7 +134,7 @@ const button_base = cva(
           "dark",
           "black",
         ],
-        className: ["border-transparent"],
+        className: ["border-transparent", "fill-white"],
       },
       {
         tone: "fill",
@@ -253,23 +253,6 @@ const button_base = cva(
       },
       {
         tone: "light",
-        color: "indigo",
-        className: [
-          "text-indigo-500",
-          "disabled:text-indigo-400",
-          "disabled:hover:text-indigo-400",
-          "bg-indigo-100",
-          "hover:bg-indigo-200",
-          "active:bg-indigo-100",
-          "active:text-indigo-600",
-          "hover:text-indigo-800",
-          "focus:text-indigo-700",
-          "disabled:bg-indigo-50",
-          "disabled:hover:bg-indigo-50",
-        ],
-      },
-      {
-        tone: "light",
         color: "red",
         className: [
           "text-red-500",
@@ -283,6 +266,7 @@ const button_base = cva(
           "focus:text-red-700",
           "disabled:bg-red-50",
           "disabled:hover:bg-red-50",
+          "fill-red-500",
         ],
       },
       {
@@ -300,6 +284,25 @@ const button_base = cva(
           "focus:text-blue-700",
           "disabled:bg-blue-50",
           "disabled:hover:bg-blue-50",
+          "fill-blue-500",
+        ],
+      },
+      {
+        tone: "light",
+        color: "indigo",
+        className: [
+          "text-indigo-500",
+          "disabled:text-indigo-400",
+          "disabled:hover:text-indigo-400",
+          "bg-indigo-100",
+          "hover:bg-indigo-200",
+          "active:bg-indigo-100",
+          "active:text-indigo-600",
+          "hover:text-indigo-800",
+          "focus:text-indigo-700",
+          "disabled:bg-indigo-50",
+          "disabled:hover:bg-indigo-50",
+          "fill-indigo-500",
         ],
       },
       {
@@ -317,6 +320,7 @@ const button_base = cva(
           "focus:text-green-700",
           "disabled:bg-green-50",
           "disabled:hover:bg-green-50",
+          "fill-green-500",
         ],
       },
       {
@@ -334,6 +338,7 @@ const button_base = cva(
           "focus:text-yellow-700",
           "disabled:bg-yellow-50",
           "disabled:hover:bg-yellow-50",
+          "fill-yellow-500",
         ],
       },
       {
@@ -351,6 +356,7 @@ const button_base = cva(
           "focus:text-purple-700",
           "disabled:bg-purple-50",
           "disabled:hover:bg-purple-50",
+          "fill-purple-500",
         ],
       },
       {
@@ -368,6 +374,7 @@ const button_base = cva(
           "focus:text-gray-700",
           "disabled:bg-gray-50",
           "disabled:hover:bg-gray-50",
+          "fill-gray-500",
         ],
       },
       {
@@ -385,6 +392,7 @@ const button_base = cva(
           "focus:text-gray-800",
           "disabled:bg-gray-100",
           "disabled:hover:bg-gray-100",
+          "fill-gray-500",
         ],
       },
       {
@@ -402,6 +410,7 @@ const button_base = cva(
           "focus:text-gray-900",
           "disabled:bg-gray-200",
           "disabled:hover:bg-gray-200",
+          "fill-gray-700",
         ],
       },
       {
@@ -416,6 +425,7 @@ const button_base = cva(
           "active:bg-gray-100",
           "disabled:bg-gray-50/50",
           "disabled:hover:bg-gray-50",
+          "fill-gray-800",
         ],
       },
       {
@@ -426,6 +436,7 @@ const button_base = cva(
           "disabled:text-blue-200",
           "hover:text-blue-600",
           "active:text-blue-700",
+          "fill-blue-500",
         ],
       },
       {
@@ -436,6 +447,7 @@ const button_base = cva(
           "disabled:text-red-200",
           "hover:text-red-600",
           "active:text-red-700",
+          "fill-red-500",
         ],
       },
       {
@@ -446,6 +458,7 @@ const button_base = cva(
           "disabled:text-green-200",
           "hover:text-green-600",
           "active:text-green-700",
+          "fill-green-500",
         ],
       },
       {
@@ -456,6 +469,7 @@ const button_base = cva(
           "disabled:text-yellow-100",
           "hover:text-yellow-500",
           "active:text-yellow-600",
+          "fill-yellow-500",
         ],
       },
       {
@@ -466,6 +480,7 @@ const button_base = cva(
           "disabled:text-purple-200",
           "hover:text-purple-600",
           "active:text-purple-700",
+          "fill-purple-500",
         ],
       },
       {
@@ -476,6 +491,7 @@ const button_base = cva(
           "disabled:text-gray-200",
           "hover:text-gray-600",
           "active:text-gray-700",
+          "fill-gray-500",
         ],
       },
       {
@@ -486,12 +502,13 @@ const button_base = cva(
           "disabled:text-gray-500",
           "hover:text-gray-800",
           "active:text-gray-900",
+          "fill-gray-700",
         ],
       },
       {
         tone: "ghost",
         color: "black",
-        className: ["text-black", "disabled:text-gray-700"],
+        className: ["text-black", "disabled:text-gray-700", "fill-black"],
       },
       {
         tone: "line",
@@ -505,6 +522,7 @@ const button_base = cva(
           "active:border-blue-700",
           "border-blue-500",
           "disabled:border-blue-300",
+          "fill-blue-500",
         ],
       },
       {
@@ -519,6 +537,7 @@ const button_base = cva(
           "active:border-red-700",
           "border-red-500",
           "disabled:border-red-300",
+          "fill-red-500",
         ],
       },
       {
@@ -533,6 +552,7 @@ const button_base = cva(
           "active:border-green-700",
           "border-green-500",
           "disabled:border-green-300",
+          "fill-green-500",
         ],
       },
       {
@@ -547,6 +567,7 @@ const button_base = cva(
           "active:border-yellow-600",
           "border-yellow-500",
           "disabled:border-yellow-300",
+          "fill-yellow-500",
         ],
       },
       {
@@ -561,6 +582,7 @@ const button_base = cva(
           "active:border-purple-700",
           "border-purple-500",
           "disabled:border-purple-300",
+          "fill-purple-500",
         ],
       },
       {
@@ -577,6 +599,7 @@ const button_base = cva(
           "active:border-gray-400",
           "border-gray-200",
           "disabled:border-gray-300",
+          "fill-gray-500",
         ],
       },
       {
@@ -591,6 +614,7 @@ const button_base = cva(
           "active:border-black",
           "border-gray-700",
           "disabled:border-gray-300",
+          "fill-gray-700",
         ],
       },
       {
@@ -603,6 +627,7 @@ const button_base = cva(
           "active:border-black",
           "border-black",
           "disabled:border-gray-500",
+          "fill-black",
         ],
       },
       {
@@ -729,7 +754,7 @@ const chevron = cva([], {
   ],
 });
 
-const spinner = cva(["-ml-1", "animate-spin"], {
+const spinner = cva(["-ml-1"], {
   variants: {
     size: {
       xs: ["w-3", "h-3", "mr-1.5"],
