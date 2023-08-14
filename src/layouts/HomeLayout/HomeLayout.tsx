@@ -5,8 +5,8 @@ import { ReactNode } from "react";
 
 const HomeLayout = ({ children }: { children: ReactNode }) => {
   return (
-    <div className="">
-      <LeftSideBar className="" />
+    <div className={"h-full"}>
+      <LeftSideBar className={"h-full"} />
       {/* 
       <TopBar className="" />
       <ContentArea className="">{children}</ContentArea> */}

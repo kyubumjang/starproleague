@@ -1,10 +1,20 @@
 import { cva } from "class-variance-authority";
 
 const nav_container = cva(
-  ["relative", "bg-neutral-900", "transition-all", "transform", "ease-in-out"],
+  [
+    "h-full",
+    "relative",
+    "bg-neutral-900",
+    "transition-all",
+    "transform",
+    "ease-in-out",
+  ],
   {
     variants: {
-      fold: { fold: ["w-16", "min-w-16"], unfold: ["w-60", "min-w-60"] },
+      fold: {
+        fold: ["w-16", "min-w-16"],
+        unfold: ["w-60", "min-w-60"],
+      },
     },
   },
 );

@@ -74,7 +74,7 @@ const LeftSideBar = (props: LeftSidebarProps) => {
       case "league":
         return <TbTournament color="white" />;
       case "statistics":
-        return <MdManageSearch />;
+        return <MdManageSearch color="white" />;
       case "analysis":
         return <BiBarChart color="white" />;
       case "settings":
@@ -102,7 +102,6 @@ const LeftSideBar = (props: LeftSidebarProps) => {
                     }}
                     className={navItemClasses(navItem.id)}
                   >
-                    {/* TODO:  translation issue*/}
                     <NavItem
                       itemLabel={navItem.name}
                       icon={iconNameToComponent(navItem.icon)}

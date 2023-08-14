@@ -1,13 +1,20 @@
+"use client";
+
 import { ReactNode, Suspense } from "react";
 
+import { HomeLayout } from "@/layouts/HomeLayout";
 import Loading from "./loading";
+import { RecoilRoot } from "recoil";
 
 const DashboardLayout = ({ children }: { children: ReactNode }) => {
   return (
-    <section>
-      <header>헤더</header>
-      <Suspense fallback={<Loading />}>{children}</Suspense>
-    </section>
+    <>
+      <RecoilRoot>
+        <Suspense fallback={<Loading />}>
+          <HomeLayout>{children}</HomeLayout>
+        </Suspense>
+      </RecoilRoot>
+    </>
   );
 };
 
