@@ -1,8 +1,9 @@
 "use client";
 
-import { BiBarChart, BiHome, BiObjectsVerticalBottom } from "react-icons/bi";
+import { BiBarChart, BiHome } from "react-icons/bi";
 import { MdManageSearch, MdOutlineLiveTv } from "react-icons/md";
 
+import { BsChatLeftText } from "react-icons/bs";
 import { FiSettings } from "react-icons/fi";
 import { Fragment } from "react";
 import Link from "next/link";
@@ -35,6 +36,7 @@ const NAV_ITEMS: ReadonlyArray<NavItem> = [
   { id: "league", icon: "league", name: "리그 진행" },
   { id: "statistics", icon: "statistics", name: "통계" },
   { id: "analysis", icon: "analysis", name: "분석" },
+  { id: "posts", icon: "posts", name: "게시판" },
   { id: "divider" },
   { id: "settings", icon: "settings", name: "설정" },
 ];
@@ -77,6 +79,8 @@ const LeftSideBar = (props: LeftSidebarProps) => {
         return <MdManageSearch color="white" />;
       case "analysis":
         return <BiBarChart color="white" />;
+      case "posts":
+        return <BsChatLeftText color="white" />;
       case "settings":
         return <FiSettings color="white" />;
       default:
