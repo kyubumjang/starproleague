@@ -22,7 +22,7 @@ export interface TextProps<T extends TagName>
   letterSpacing?: TextLetterSpacing;
   variant?: TextVariant;
   weight?: TextWeight;
-  children: string;
+  children: string | JSX.Element;
   tagName?: DynamicTagProps<T>["tagName"];
   font?: TextFont;
 }
