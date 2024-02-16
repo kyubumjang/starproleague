@@ -32,7 +32,8 @@
     "postcss.config.js",
     "commitlint.config.js",
     "lintstagedrc.js",
-    "next.config.js"
+    "next.config.js",
+    "./src/@types/i18next.d.ts"
   ],
   "exclude": ["node_modules"]
 }
