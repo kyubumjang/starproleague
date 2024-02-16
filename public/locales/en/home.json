@@ -1,0 +1,16 @@
+{
+  "navigation": {
+    "dashboard": "Dashboard",
+    "live": "Live",
+    "statistics": "Statistics",
+    "league": "League",
+    "analysis": "Analysis",
+    "posts": "Posts",
+    "manager": "Manager",
+    "settings": "Settings"
+  },
+  "topBar": {
+    "notifications": "Notifications",
+    "logOut": "Logout"
+  }
+}

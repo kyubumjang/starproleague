@@ -1,0 +1,17 @@
+{
+  "navigation": {
+    "dashboard": "대시보드",
+    "live": "라이브",
+    "statistics": "통계",
+    "league": "리그 진행",
+    "analysis": "분석",
+    "manager": "관리자",
+    "posts": "문서",
+    "settings": "설정"
+  },
+  "topBar": {
+    "notifications": "알림",
+    "logOut": "로그아웃"
+  },
+  "dashboard": "대시보드"
+}
