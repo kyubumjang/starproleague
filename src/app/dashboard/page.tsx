@@ -1,3 +1,5 @@
+"use client";
+
 const DashBoard = () => {
   return <div>DashBoard Page</div>;
 };
